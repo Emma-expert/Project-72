@@ -29,11 +29,11 @@
           <a href="contact-us">Contact Us</a>
           <a href="login">Log in</a>
         </div>
-        <!-- button -->
+        button -->
 
         <div class="hidden md:flex space-x-11 items-center ">
-            <a href="contact-us">Contact Us</a>
-            <a href="login">Log in</a>
+            <a href="{% url 'contact-us' %}">Contact Us</a>
+            <a href="{% url 'loginform' %}">Log in</a>
             <a
                     href="{% url 'signup' %}"
                     class="hidden md:block p-3 px-6 pt-2 ml-11 baseline bg-[#fff] md:m-4 text-[#154ED5] rounded-md"
