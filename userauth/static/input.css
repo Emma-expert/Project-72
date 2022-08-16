@@ -8,7 +8,7 @@
     background-size: cover;
 }   */
 .rick{
-  background-image: url('{% static "../Pictures/Background.png" %}');
+  background-image: url('{% static "../Pictures/background.png" %}');
   background-size: cover;
   left: 0;
   top: 0;
