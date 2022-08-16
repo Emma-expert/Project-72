@@ -15,12 +15,12 @@
         <div class="bar">
             <div class="logo">
                 {% load static %}
-                <img src = "{% static 'Logo/logo_blue_yellow.png' %}" alt="">
+                <img src = "{% static 'Logo/logo-blue-yellow.png' %}" alt="">
                 <a href="{% url 'Home' %}"></a>
             </div>
             <div class="image">
                 {% load static %}
-                <img src="{% static 'save.png'%}" alt="" srcset="">
+                <img src="{% static 'icons/save.png'%}" alt="" srcset="">
                 <p>
                     Saved
                 </p>
@@ -30,13 +30,13 @@
                 <li>
                     {% load static %}
                         <img src="{% static 'dashboard.svg'%}" alt="" srcset="">
-                        <a href="dashboard.html">Dashboard</a>
+                        <a href="{% url 'dashboard' %}">Dashboard</a>
                     </li>
                   
                     <li>
                         {% load static %}
                         <img src="{% static 'policies.svg'%}" alt="" srcset="">
-                        <a href="policy.html">Policies</a>
+                        <a href="{% url 'policy' %}">Policies</a>
                     </li>
                     <li>
                         {% load static %}
@@ -62,7 +62,7 @@
                         <h1>
                            Saved
                         </h1>
-                        <img src="save2_on_blue.svg" alt="" srcset="">
+                        <img src="{% static 'icons/save2_on_blue.png'%}" alt="" srcset="">
 
                     </div>
                 </div>
