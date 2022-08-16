@@ -71,7 +71,7 @@
                 better protecting your blog, app, website or business
             </p>
             <a
-                    href="Sign_up.html"
+                    href="{% url 'signup' %}"
                     class="mt-10 max-w-sm p-6 mb-9 text-center text-3xl px-2 pt-2 baseline bg-[#154ED5] text-[#fff] rounded-md md:text-center md:w-96 md:mb-20 md:py-2 md:px-1"
             >Get Started</a
             >
@@ -109,7 +109,7 @@
             <!-- card 1 -->
 
             <div class="max-w-sm bg-white rounded-lg mb-7 p-12">
-                <a href="signup">
+                <a href="{% url 'signup' %}">
                     <img
                             class="w-32 ml-20 p-5"
                             src="{% static 'icons/handshake_icon.png' %}"
@@ -129,7 +129,7 @@
                         secure your business
                     </p>
                     <a
-                            href="signup"
+                            href="{% url 'signup' %}"
                             class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 md:mt-4"
                     >
                         Generate Terms & Conditions
@@ -139,7 +139,7 @@
 
             <!-- card 2 -->
             <div class="max-w-sm bg-white rounded-lg mb-7 p-12">
-                <a href="signup">
+                <a href="{% url 'signup' %}">
                     <img
                             class="w-32 ml-20 p-5"
                             src="{% static 'icons/check_shield_icon.png' %}"
@@ -147,7 +147,7 @@
                     />
                 </a>
                 <div class="p-5">
-                    <a href="policy.html">
+                    <a href="{% url 'policy' %}">
                         <h5
                                 class="mb-2 text-2xl font-bold tracking-tight text-[#154ED5]"
                         >
@@ -159,7 +159,7 @@
                         simple terms your customer understands.
                     </p>
                     <a
-                            href="signup"
+                            href="{% url 'signup' %}"
                             class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                     >
                         Generate Privacy Policy
@@ -169,11 +169,11 @@
 
             <!-- card 3 -->
             <div class="max-w-sm bg-white rounded-lg mb-7 p-12">
-                <a href="Sign_up.html">
+                <a href="{% url 'signup' %}">
                     <img class="w-32 ml-20 p-5" src="{% static 'icons/check_icon.png' %}" alt=""/>
                 </a>
                 <div class="p-5">
-                    <a href="signup">
+                    <a href="{% url 'signup' %}">
                         <h5
                                 class="mb-2 text-2xl font-bold tracking-tight text-[#154ED5]"
                         >
@@ -185,7 +185,7 @@
                         software, website and keep them safe from legal issue
                     </p>
                     <a
-                            href="signup"
+                            href="{% url 'signup' %}"
                             class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 md:mt-4"
                     >
                         Generate Terms Of Use
@@ -349,7 +349,7 @@
             </div>
 
             <a
-                    href="#"
+                    href="{% url 'signup' %}"
                     class="text-4xl px-4 py-4 font-medium text-center md:hidden text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
             >
                 Generate Now

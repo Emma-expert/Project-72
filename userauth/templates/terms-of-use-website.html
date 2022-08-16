@@ -66,7 +66,7 @@
                 <p>Website</p>
             </div>
             <div id="first-right">
-                <a href="dashboard.html">
+                <a href="{% url 'dashboard' %}">
                     {% load static %}
                     <img src="{% static 'icons/arrow-left.svg' %}" alt="Arrow-left">
                     BACK TO DASHBOARD
@@ -84,7 +84,7 @@
                 <input type="radio" name="progress-option" id="" value="75">
                 <input type="radio" name="progress-option" id="" value="100">
                 </p>
-                <a href="export-option.html"><button>
+                <a href="{% url 'export' %}"><button>
                     Export
                 </button></a>
             </div>
@@ -128,7 +128,7 @@
                     <img src="" alt="">Previous
                 </button> -->
             </a>
-            <a href="" id="third-right">
+            <a href="#" id="third-right">
                 {% load static %}
                 <button>
                     Save & Next<img src="{% static 'icons/arrow-right.svg' %}" alt="Arrow-left">
@@ -136,10 +136,10 @@
             </a>
         </div>
         <footer>
-            <a href="policy.html">Privacy Policy</a>
-            <a href="">Terms of Use</a>
-            <a href="">Disclaimer</a>
-            <a href="">Cookie Policy</a>
+            <a href="{% url 'policy' %}">Privacy Policy</a>
+            <a href="{% url 'index' %}">Terms of Use</a>
+            <a href="#">Disclaimer</a>
+            <a href="#">Cookie Policy</a>
         </footer>
     </main>
     {% load static %}
