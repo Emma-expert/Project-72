@@ -2,9 +2,9 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     {% load static %}
     <link rel="stylesheet" href="{% static 'about-us.css' %}" />
     <link href='https://fonts.googleapis.com/css?family=Work Sans' rel='stylesheet' />
@@ -17,11 +17,11 @@
             {% load static %}
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <div class="overlay-content">
-              <a href="{% url 'Home' %}">Products</a>
-              <a href="{% url 'Home' %}">Resources</a>
-              <a href="{% url 'contact-us' %}">Contact us</a>
-              <a href="{% url 'loginform' %}">Login</a>
-              <a href="{% url 'signup' %}" id="bar-start">Get Started</a>
+                <a href="{% url 'Home' %}">Products</a>
+                <a href="{% url 'Home' %}">Resources</a>
+                <a href="{% url 'contact-us' %}">Contact us</a>
+                <a href="{% url 'loginform' %}">Login</a>
+                <a href="{% url 'signup' %}" id="bar-start">Get Started</a>
             </div>
         </div>
     </div>
@@ -100,17 +100,17 @@
                 <div id="figures">
                     <div id="fig1">
                         {% load static %}
-                        <img src="{% static 'Pictures/user-count.png' %}" alt="User Count"/>
+                        <img src="{% static 'Pictures/user-count.png' %}" alt="User Count" />
                         <p>Users</p>
                     </div>
                     <div id="fig2">
                         {% load static %}
-                        <img src="{% static 'Pictures/policy-count.png' %}" alt="Policy Count"/>
+                        <img src="{% static 'Pictures/policy-count.png' %}" alt="Policy Count" />
                         <p>Policies generated per day</p>
                     </div>
                     <div id="fig2">
                         {% load static %}
-                        <img src="{% static 'Pictures/terms-count.png' %}" alt="Terms Count"/>
+                        <img src="{% static 'Pictures/terms-count.png' %}" alt="Terms Count" />
                         <p>Terms generated per month</p>
                     </div>
                 </div>

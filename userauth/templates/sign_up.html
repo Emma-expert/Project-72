@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,6 +10,7 @@
     <link rel="stylesheet" href="{%static 'sign_up.css'%}">
     <link href='https://fonts.googleapis.com/css?family=Work Sans' rel='stylesheet'>
 </head>
+
 <body>
     <div id="left">
         {% load static %}
@@ -17,15 +19,15 @@
     </div>
     <div id="right">
         <div id="right-div">
-           <form action="" method="POST">
-            {% csrf_token %}
-            {% if messages %}
+            <form action="" method="POST">
+                {% csrf_token %}
+                {% if messages %}
                 <ul class="messages">
                     {% for message in messages %}
-                        <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
-                    {% endfor %}
+                    <li{% if message.tags %} class="{{ message.tags }}" {% endif %}>{{ message }}</li>
+                        {% endfor %}
                 </ul>
-            {% endif %}
+                {% endif %}
                 <section id="register">
                     <p>Register</p>
                     <p>Let's get you started with TermsCreator</p>
@@ -38,17 +40,20 @@
                         </p>
                         <p>
                             <label for="password">Password</label>
-                            <input required type="password" name="password1" id="password" placeholder="minimum of 8 character" minlength="8">
+                            <input required type="password" name="password1" id="password"
+                                placeholder="minimum of 8 character" minlength="8">
                         </p>
                     </div>
                     <div>
                         <p>
                             <label for="contact">Contact Number</label>
-                            <input required type="tel" name="contact" id="contact" placeholder="+234-800-222-4444" pattern="[+][0-9]{3}[0-9]{3}[0-9]{3}[0-9]{4}">
+                            <input required type="tel" name="contact" id="contact" placeholder="+234-800-222-4444"
+                                pattern="[+][0-9]{3}[0-9]{3}[0-9]{3}[0-9]{4}">
                         </p>
                         <p>
                             <label for="password">Confirm Password</label>
-                            <input required type="password" name="password2" id="confirm_password" placeholder="minimum of 8 characters" minlength="8">
+                            <input required type="password" name="password2" id="confirm_password"
+                                placeholder="minimum of 8 characters" minlength="8">
                         </p>
                     </div>
                     <div>
@@ -73,7 +78,8 @@
                         </p>
                     </div>
                     <p id="checkbox">
-                        <input type="checkbox" required> I agree with the <a href="">Terms & Conditions</a> and <a href="privacypolicy.html">Privacy Policy</a>
+                        <input type="checkbox" required> I agree with the <a href="">Terms & Conditions</a> and <a
+                            href="privacypolicy.html">Privacy Policy</a>
                     </p>
                 </fieldset>
                 <input type="submit" name="submit" id="submit" value="Create Account">
@@ -84,4 +90,5 @@
     {% load static %}
     <script src="{% static 'signup.js' %}"></script>
 </body>
+
 </html>

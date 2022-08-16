@@ -1,7 +1,7 @@
-
 <!DOCTYPE html>
 <html lang="en">
 {% if user.is_authenticated %}
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -33,7 +33,7 @@
                 </a>
                 <a href="{% url 'policy' %}">
                     {% load static %}
-                    <span ><img src="{% static 'icons/clipboard-tick.png' %}" alt="clipboard-tick Icon"></span>
+                    <span><img src="{% static 'icons/clipboard-tick.png' %}" alt="clipboard-tick Icon"></span>
                     <span>Policies</span>
                 </a>
                 <a href="{% url 'dashboard' %}">
@@ -66,7 +66,7 @@
             <div id="middle">
                 <a href="{% url 'dashboard' %}">
                     {% load static %}
-                    <img src="{% static 'icons/folder-2.png' %}"alt="Folder Icon">
+                    <img src="{% static 'icons/folder-2.png' %}" alt="Folder Icon">
                 </a>
                 <a href="{% url 'policy' %}">
                     {% load static %}
@@ -115,7 +115,7 @@
                 </a>
                 <a href="{% url 'policy' %}">
                     {% load static %}
-                    <span ><img src="{% static '/icons/clipboard-tick.png' %}" alt="clipboard-tick Icon"></span>
+                    <span><img src="{% static '/icons/clipboard-tick.png' %}" alt="clipboard-tick Icon"></span>
                     <span>Policies</span>
                 </a>
                 <a href="{% url 'dashboard' %}">
@@ -136,16 +136,17 @@
 
         <ul>
 
-        </ol>
-    </ul>
+            </ol>
+        </ul>
         <div id="policies-line">
             <div id="left">
-                <p> 
+                <p>
                     {% load static %}
                     <span><img src="{% static '/icons/clipboard-tick.png' %}" alt="Profile Icon"></span>
                     <span>Policies</span>
                 </p>
-                <p>Legal policies help you comply with data privacy and consumer protection laws, protect your business and limit your liability.</p>
+                <p>Legal policies help you comply with data privacy and consumer protection laws, protect your business
+                    and limit your liability.</p>
             </div>
             <div id="right">
                 <button type="submit" id="export"><a href="{% url 'first_question' %}">CREATE</a></button>
@@ -153,17 +154,18 @@
         </div>
 
 
-            {% load static %}
+        {% load static %}
 
 
 
-    {% load static %}
-    <script src="{% static 't-c-preview.js' %}"></script>    
+        {% load static %}
+        <script src="{% static 't-c-preview.js' %}"></script>
     </div>
 </body>
+
 </html>
 
-{% elif not user.is_authenticated  %}
+{% elif not user.is_authenticated %}
 
 <head>
     <meta charset="UTF-8">
@@ -174,6 +176,7 @@
     <link rel="stylesheet" href="{% static 'password-success-modal.css' %}">
     <link href='https://fonts.googleapis.com/css?family=Work Sans' rel='stylesheet'>
 </head>
+
 <body>
     <div id="content">
         <div id="text-without-button">
@@ -189,5 +192,6 @@
         </a>
     </div>
 </body>
+
 </html>
 {% endif %}
